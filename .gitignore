@@ -1,0 +1,9 @@
+build/
+CMakeFiles/
+_deps/
+generated/
+examples/
+lib/
+
+Makefile
+CMakeCache.txt

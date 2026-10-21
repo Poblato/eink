@@ -1,4 +1,5 @@
 #include "EPD_Test.h"   //Examples
+#include <stdint.h>
 
 int main(void)
 {
