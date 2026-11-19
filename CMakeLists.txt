@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.13)
-include(pico-sdk/pico_sdk_init.cmake)
+include($ENV{PICO_SDK_PATH}/pico_sdk_init.cmake)
 project(Pico_ePaper_Code)
+
+pico_sdk_init()
 
 # add a compilation subdirectory
 add_subdirectory(lib/Config)
@@ -18,8 +20,6 @@ include_directories(./lib/GUI)
 add_executable(epd 
 main.c
 )
-
-pico_sdk_init()
 
 # enable usb output, disable uart output
 pico_enable_stdio_usb(epd 1)

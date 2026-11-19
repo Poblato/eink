@@ -39,12 +39,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
+  include("/home/poblato/Documents/Pico_ePaper_Code/c/pico-sdk/cmake_install.cmake")
   include("/home/poblato/Documents/Pico_ePaper_Code/c/lib/Config/cmake_install.cmake")
   include("/home/poblato/Documents/Pico_ePaper_Code/c/lib/e-Paper/cmake_install.cmake")
   include("/home/poblato/Documents/Pico_ePaper_Code/c/lib/Fonts/cmake_install.cmake")
   include("/home/poblato/Documents/Pico_ePaper_Code/c/lib/GUI/cmake_install.cmake")
   include("/home/poblato/Documents/Pico_ePaper_Code/c/examples/cmake_install.cmake")
-  include("/home/poblato/Documents/Pico_ePaper_Code/c/pico-sdk/cmake_install.cmake")
 
 endif()
 
